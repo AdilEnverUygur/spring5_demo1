@@ -4,5 +4,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--配置User对象创建-->
-    <bean id="user" class="com.atguigu.spring5.User"></bean>
+    <!--<bean id="user" class="com.atguigu.spring5.User"></bean>-->
+
+    <!--配置User对象创建-->
+    <bean id="book" class="com.atguigu.spring5.Book">
+    <!--使用property完成注入
+        name : 类里面属性名称
+       value : 向属性注入的值
+    -->
+        <property name="bname" value="阿迪"></property>
+        <property name="bauthor" value="阿地"></property>
+    </bean>
+
 </beans>
