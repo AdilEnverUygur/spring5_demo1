@@ -6,6 +6,11 @@ public class Emp {
     private String gender;
     //员工属于某一个部门,使用对象形式表示
     private  Dept dept;
+    //生成dept的get方法
+
+    public Dept getDept() {
+        return dept;
+    }
 
     public void seteName(String eName) {
         this.eName = eName;
